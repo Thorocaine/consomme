@@ -1,0 +1,25 @@
+{
+  "name": "consomme",
+  "version": "1.0.0-beta.0",
+  "description": "An array reducer library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thorocaine/consomme.git"
+  },
+  "keywords": [
+    "js",
+    "array",
+    "reduce",
+    "reducer"
+  ],
+  "author": "Jonathan Peel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Thorocaine/consomme/issues"
+  },
+  "homepage": "https://github.com/Thorocaine/consomme#readme"
+}
