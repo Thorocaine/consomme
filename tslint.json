@@ -1,6 +1,16 @@
 {
-  "extends": ["tslint-plugin-prettier", "tslint-config-prettier"],
+  "extends": [
+    "tslint:latest",
+    "tslint-config-prettier"
+  ],
   "rules": {
-    "prettier": true
+    "max-line-length": [
+      true,
+      {
+        "limit": 120,
+        "ignore-pattern": "^import |^export {(.*?)}"
+      }
+    ],
+    "no-debugger": true
   }
 }
