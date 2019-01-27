@@ -1,21 +1,12 @@
 {
   "name": "consomme",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "An array reducer library",
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
-  "dependencies": {
-    "@types/jest": "23.3.12",
-    "@types/node": "10.12.18",
-    "@types/react": "16.7.18",
-    "@types/react-dom": "16.0.11",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-scripts": "2.1.3",
-    "typescript": "3.2.2"
-  },
+  "dependencies": {},
   "scripts": {
     "build": "tsc",
     "lint": "tslint --project .",

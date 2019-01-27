@@ -1,7 +1,7 @@
 import consumme from './consumme';
 import { select } from './select';
 
-interface IPerson {
+interface Person {
   name: string;
   surname: string;
 }
@@ -14,12 +14,12 @@ it('should return itself', () => {
 });
 
 it('should return doubles', () => {
-  const result = numberArray.reduce(consumme(select(x => x * 2)), [] as number[]);
+  const result = numberArray.reduce(consumme(select(x => x * 2)), []);
   expect(result).toEqual([2, 4, 6, 8, 10]);
 });
 
 it('should add one and doubles', () => {
-  const result = numberArray.reduce(consumme(select(x => x + 1), select(x => x * 2)), [] as number[]);
+  const result = numberArray.reduce(consumme(select(x => x + 1), select(x => x * 2)), []);
   expect(result).toEqual([4, 6, 8, 10, 12]);
 });
 
@@ -32,14 +32,11 @@ it('should add one and doubles minus one', () => {
 });
 
 it('should map person to name', () => {
-  const result = personArray.reduce(consumme(select(x => `${x.name} ${x.surname}`)), [] as IPerson[]);
+  const result = personArray.reduce(consumme(select(x => `${x.name} ${x.surname}`)), []);
   expect(result).toEqual(['David Peel', 'Jon Michael']);
 });
 
 it('should return name length', () => {
-  const result = personArray.reduce(
-    consumme(select(x => `${x.name}${x.surname}`), select(x => x.length)),
-    [] as IPerson[]
-  );
+  const result = personArray.reduce(consumme(select(x => `${x.name}${x.surname}`), select(x => x.length)), []);
   expect(result).toEqual([9, 10]);
 });

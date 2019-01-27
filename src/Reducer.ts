@@ -1,1 +1,8 @@
-export type Reducer<TIn extends any[], TOut extends any[]> = (inputValue: TIn[0]) => TOut[0];
+type ReductionTypes = 'select' | 'where';
+
+export interface ReducerResult<TOut> {
+  type: ReductionTypes;
+  value: TOut;
+}
+
+export type Reducer<TIn, TOut> = (inputValue: TIn) => ReducerResult<TOut>;
