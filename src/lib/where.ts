@@ -5,4 +5,4 @@ const where = <T>(predicate: (value: T) => boolean) => (value: T): ReducerResult
   value: value && predicate(value) ? value : undefined
 });
 
-export default where;
+export { where };
