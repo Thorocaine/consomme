@@ -1,8 +1,11 @@
 {
   "name": "consomme",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.1",
   "description": "An array reducer library",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "@types/jest": "23.3.12",
     "@types/node": "10.12.18",
@@ -14,19 +17,9 @@
     "typescript": "3.2.2"
   },
   "scripts": {
-<<<<<<< HEAD
     "build": "tsc",
     "lint": "tslint --project .",
     "test": "jest"
-=======
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
->>>>>>> 75af75b23dd99499f528f66677090aa061763fd4
   },
   "browserslist": [
     ">0.2%",
