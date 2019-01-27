@@ -3,11 +3,37 @@
   "version": "1.0.0-beta.0",
   "description": "An array reducer library",
   "main": "index.js",
+  "dependencies": {
+    "@types/jest": "23.3.12",
+    "@types/node": "10.12.18",
+    "@types/react": "16.7.18",
+    "@types/react-dom": "16.0.11",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-scripts": "2.1.3",
+    "typescript": "3.2.2"
+  },
   "scripts": {
+<<<<<<< HEAD
     "build": "tsc",
     "lint": "tslint --project .",
     "test": "jest"
+=======
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
+  "eslintConfig": {
+    "extends": "react-app"
+>>>>>>> 75af75b23dd99499f528f66677090aa061763fd4
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Thorocaine/consomme.git"
